@@ -54,6 +54,6 @@ proctoring integration, LTI launches, help overrides, and others.
 types and see the same.
 
 ## Is it Running?
-Hit https://mylearn.int.bbpd.io:8092 in your browser
+Hit https://mylearn.int.bbpd.io:8092 in your browser.
 
 

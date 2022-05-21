@@ -79,7 +79,7 @@ app.get('/auth-done', async (req, res) => {
         console.log ('token data: ' + JSON.stringify(tokenData));
         const token = tokenData.access_token;
         const userUuid = tokenData.user_id;
-        const launchUrl = Config.webAppHost + '/handleUefPanelAction';
+        const launchUrl = Config.webAppHost + '/handleUefAction';
         const assetsUrl = Config.webAppHost + '/assets';
         const locale = req.query.state;
         return res.render('uefLaunch', { token, learnUrl, userUuid, launchUrl, locale, assetsUrl } );
@@ -90,7 +90,7 @@ app.get('/auth-done', async (req, res) => {
     }
 });
 
-app.get('/handleUefPanelAction', (req, res) => {
+app.get('/handleUefAction', (req, res) => {
     const action = req.query.action;
     const data = decodeURIComponent(req.query.data);
     console.log ('data context: ' + data);
