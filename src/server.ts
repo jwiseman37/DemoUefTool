@@ -91,7 +91,9 @@ app.get('/auth-done', async (req, res) => {
 
 app.get('/handleUefPanelAction', (req, res) => {
     const action = req.query.action;
-    res.send(`This would handle this action of ${action}...`);
+    const data = decodeURIComponent(req.query.data);
+    console.log ('data context: ' + data);
+    res.send(`This would handle this action of ${action}... data context is ${data}`);
 });
 
 if (Config.https) {
