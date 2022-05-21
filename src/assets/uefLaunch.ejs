@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Integration</title>
+    <script type="application/javascript">
+        window.__token = "<%- token %>";
+        window.__lmsHost = new URL("<%- learnUrl %>").origin;
+        window.__uuid = "<%- userUuid %>";
+        window.__launchUrl = "<%- launchUrl %>";
+        window.__locale = "<%- locale %>";
+    </script>
+    <script type="application/javascript" src="./assets/integration_demo.js"></script>
+</head>
+<body>
+Integration has loaded. User: <%- userUuid %>
+</body>
+</html>
