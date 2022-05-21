@@ -38,8 +38,11 @@ Then go into learn and register the REST API integration and add the LTI domain.
 - When you click on an Ultra course, you will see an example of a banner added to the top.
 - You will also see an example of a course detail menu item added which opens a large peek panel.
 - In the course when you click on Books & Tools, you will see an example of a large peek panel popup as well.
+- In the course when you click on an assignment, you will see an example of a medium model popup.
 - And in the course when you goto grade the activity for a student, you will see the example of a small peek panel.
 - When you goto Recent Activity, you will see an example of a notification added to the Create button.
+
+Note that the data context is displayed demonstrating how the context keys can be passed and used as required for processing.
 
 Note that the message are logged in the console as the interactions happen.  Open it up and watch the chatter as you click around.
 
