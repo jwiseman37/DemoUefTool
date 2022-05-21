@@ -4,6 +4,9 @@ This is a simple LTI tool that demonstrates a variety of options in UEF.
 ## Configuration
 To configure, goto the dev portal and configure a new LTI 1.3 application.  
 
+Note that if your Host URL is different for your tool, replace https://mylearn.int.bbpd.io:8092 throughout and update the config.ts 
+as noted below.  You will then need to update the cert files or switch to using http depending on your configuration.
+
 - Domain: mylearn.int.bbpd.io
 - Login url: https://mylearn.int.bbpd.io:8092/login
 - Redirect url: https://mylearn.int.bbpd.io:8092/launches
@@ -44,7 +47,7 @@ Note that this is not an exhaustive demonstration of capabilities.  Others inclu
 proctoring integration, LTI launches, help overrides, and others.
 
 #### LTI: The following will be demonstrated:
-- When you goto tools & click on the placement you added, the jwt payload will be displayed.  You can configure out placement
+- When you goto tools & click on the placement you added, the jwt payload will be displayed.  You can configure other placement
 types and see the same.
 
 ## Is it Running?
