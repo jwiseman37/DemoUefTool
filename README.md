@@ -1,10 +1,10 @@
 # Demo Uef Tool
-This is a simple LTI tool that demonstrates a variety of options in UEF.
+This is a simple LTI 1.3 tool that demonstrates a variety of options in UEF and a basic LTI 1.3 launch.
 
 ## Configuration
 To configure, goto the dev portal and configure a new LTI 1.3 application.  
 
-Note that if your Host URL is different for your tool, replace https://mylearn.int.bbpd.io:8092 throughout and update the config.ts 
+Note that if your host URL is different for your tool, replace https://mylearn.int.bbpd.io:8092 throughout and update the config.ts 
 as noted below.  You will then need to update the cert files or switch to using http depending on your configuration.
 
 - Domain: mylearn.int.bbpd.io
@@ -17,7 +17,7 @@ open a ticket with Blackboard for this to be done.
 
 Then goto the config.ts file and update the values for your registered application.  
 
-Then go into learn and register the REST API integration and add the LTI domain.  You can add placements for LTI and UEF.
+Then go into Learn and register the REST API integration and add the LTI domain.  You can add placements for LTI and UEF.
 
 - LTI: https://mylearn.int.bbpd.io:8092/lti -- add as a system placement
 - UEF: http://mylearn.int.bbpd.io:8092/uef -- add a a UEF placement
