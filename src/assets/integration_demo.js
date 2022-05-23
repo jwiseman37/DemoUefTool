@@ -468,7 +468,7 @@ function renderModal (modalSize, data)
                         {
                             tag: 'img',
                             props: {
-                                src: "./assets/ueftest_top.png"
+                                src: assetsUrl + "/ueftest_top.png"
                             },
                         }]
                 },

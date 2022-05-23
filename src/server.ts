@@ -81,7 +81,8 @@ app.get('/auth-done', async (req, res) => {
         const userUuid = tokenData.user_id;
         const launchUrl = Config.webAppHost + '/handleUefAction';
         const locale = req.query.state;
-        return res.render('uefLaunch', { token, learnUrl, userUuid, launchUrl, locale } );
+        const assetsUrl = Config.webAppHost + '/assets';
+        return res.render('uefLaunch', { token, learnUrl, userUuid, launchUrl, locale, assetsUrl } );
     } catch (ex) {
         console.log ('Error: ' + ex.message);
         res.send('An error occurred processing the id_token.');
